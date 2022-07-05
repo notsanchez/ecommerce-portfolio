@@ -93,7 +93,7 @@ app.get('/Tdata', async (req, res) => {
 
 mongoose
   .connect(
-    process.end.MONGODBKEY,
+    process.env.MONGODBKEY,
   )
   .then(() => {
     console.log('Conectou ao banco!')
