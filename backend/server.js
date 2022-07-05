@@ -93,7 +93,7 @@ app.get('/Tdata', async (req, res) => {
 
 mongoose
   .connect(
-    'mongodb+srv://sanchezshop:admin@cluster0.acji9.mongodb.net/?retryWrites=true&w=majority',
+    process.end.MONGODBKEY,
   )
   .then(() => {
     console.log('Conectou ao banco!')
